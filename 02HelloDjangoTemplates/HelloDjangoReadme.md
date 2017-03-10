@@ -32,9 +32,15 @@ HELLO %S! AND TEMPLATES
 Just before we look at templates, let’s look at how we can add variable content to a view.
 
 Update the view you created in the last lesson with the code shown below:
+#
+from django.http import HttpResponse
 
-pycharm-%s.png
 
+def say_hello(request):
+    name = "Bootcamper"
+    html = "<html><body><h1>Hello %s!</h1></body></html>" % name
+    return HttpResponse(html)
+#
 The function has been modified to use two variables, and the code within the view constructs an HTML response using Python’s “format-string” capability. The %s within the string is a placeholder, and the percent sign after the string means “Replace the %s placeholder in the string with the value held in the name variable.”
 
 Start your server and test your changes. You should see something similar to below:
@@ -78,3 +84,5 @@ Designers are assumed not to be Python programmers. The template system authors 
 However, the system also intends to accommodate small teams in which the templates are created by Python programmers.
 
 The goal is not to invent a programming language. The goal is to offer just enough programming-esque functionality, such as branching and looping, that is essential for making presentation-related decisions
+
+finished challenge at https://github.com/brendanjgreene/MenuTest_prj.git
