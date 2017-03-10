@@ -9,3 +9,6 @@
 -Installing SQLite Database Browser
 -Adding data to a table
 -Viewing records in the shell
+
+challenge complted at
+https://github.com/brendanjgreene/QuotesTest.git
