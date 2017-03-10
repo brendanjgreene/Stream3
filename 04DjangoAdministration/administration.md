@@ -19,3 +19,6 @@ In this lesson, we’ve learned that:
 * We link our admin to the models within the admin.py file in our app
 * We can check a record’s change history using the History link
 * Django provides a for-loop to display contacts
+
+challenge completed at
+
