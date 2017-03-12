@@ -30,3 +30,11 @@ Topics include:
 
 * Add static content
 
+#SUMMARY
+
+##In this lesson we learned how to:
+
+* Add views and templates needed for a non-admin user to read the blog.
+* Create a more flexible site architecture.
+* Add static content to our projects.
+
