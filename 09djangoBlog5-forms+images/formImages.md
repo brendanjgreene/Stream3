@@ -27,4 +27,19 @@ To do this:
 * Migrate.
 * Add MEDIA_ROOT value to settings.py.
 * Add a custom url pattern to the project level urls.py file.
-* Add a reference to the Post model image attribute in an <img> tag inside the postdetail template to view.  
+* Add a reference to the Post model image attribute in an <img> tag inside the postdetail template to view.
+  
+#CREATE A BLOG POST FORM
+
+##Now that we have the ability to upload an image, we’re going to create a blog post creation form that users can access without having to log into the admin screen. We’ll take advantage of Django’s built-in ModelForm functionality to help us out on this task. More Django goodness!
+
+To do this:
+
+* Create a forms.py file to add selected model fields to the form.
+* Create new views to render the form.
+* Add a new url pattern to our project level urls.py.
+* Create a new template for submitting new posts.
+* Add the 3rd party django-forms-bootstrap library to dress up the form display.
+* Make the post content in our postdetail template editable.
+* Enable saving of new posts.
+* Enable editing of existing posts.
