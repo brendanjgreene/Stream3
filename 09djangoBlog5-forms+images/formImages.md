@@ -15,3 +15,16 @@ Topics include:
 * Adding Images to a Post
 
 * Create a New Blog Post Form
+
+# ADDING IMAGES TO A POST
+
+We’ll start with the images. As in the last two lessons, we’ll first modify our Post model.
+
+To do this:
+
+* Add a new imageField to the Post model.
+* Install Pillow to handle image storage and retrieval.
+* Migrate.
+* Add MEDIA_ROOT value to settings.py.
+* Add a custom url pattern to the project level urls.py file.
+* Add a reference to the Post model image attribute in an <img> tag inside the postdetail template to view.  
